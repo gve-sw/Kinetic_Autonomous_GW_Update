@@ -1,0 +1,12 @@
+A script was developed for the IR829 that would scrape the Bus ID from the co-pilot and imbed this Bus ID
+and device serial number into the remote-id and hexed into the IPv6 address, respectively, of the VPN client tunnel from
+IR829 to the headend router.  Another script was developed to periodically ssh into the headend router
+for this information and utilize APIs to update the Kinetic dashboard with the appropriate Bus
+ID name for the associated gateway serial number.
+
+- Make sure Python is installed
+- Make sure pip is installed
+  - https://pip.pypa.io/en/stable/installing/ for information on pip
+- Enter 'pip install -r requirements.txt' into command line to download necessary libraries
+- In sshExtract.py enter the IP address of the head end router, username and password for ssh
+- In api.py enter the API key for organization as well as the organization ID
